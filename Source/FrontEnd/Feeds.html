@@ -1,1 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feeds</title>
 
+    <link rel="stylesheet" href="./styles/feeds.css" />
+  </head>
+  
+  <div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">calendrome</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/homepage.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="/connect.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> CONNECT</a>
+      <a href="feeds.html/" class="w3-bar-item w3-button"><i class="fa fa-th"></i> FEED</a>
+      <a href="/search.html" class="w3-bar-item w3-button"><i class="fa fa-search fa-lg"></i> SEARCH</a>
+      <a href="/log-in.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LOGIN</a>
+    </div>
+    
+  </div>
+</div>
+  
+  <body>
+    <section class="tech-today-container">
+      <p>Tech Today</p>
+      <div class="tech-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime
+          delectus non quasi cumque explicabo voluptas consequatur impedit
+          commodi dolore quidem quos hic quia exercitationem, dolor asperiores
+          laborum, corporis sit.
+        </p>
+      </div>
+      <div class="tech-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime
+          delectus non quasi cumque explicabo voluptas consequatur impedit
+          commodi dolore quidem quos hic quia exercitationem, dolor asperiores
+          laborum, corporis sit.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <section class="search-container">
+        <form>
+          <input
+            type="text"
+            placeholder="Share some good thought ..."
+            name="find"
+          />
+          <button type="submit">Share</button>
+        </form>
+      </section>
+      <section class="contribution-container">
+        <div class="contributor">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            quae eaque neque. Illo, deleniti modi! Repudiandae nisi, quidem,
+            ipsam eos totam voluptate possimus voluptatum, ducimus quasi natus
+            accusantium quas molestiae?
+          </p>
+          <button>Attend</button>
+        </div>
+        <div class="contributor">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            quae eaque neque. Illo, deleniti modi! Repudiandae nisi, quidem,
+            ipsam eos totam voluptate possimus voluptatum, ducimus quasi natus
+            accusantium quas molestiae?
+          </p>
+          <button>Attend</button>
+        </div>
+        <div class="contributor">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            quae eaque neque. Illo, deleniti modi! Repudiandae nisi, quidem,
+            ipsam eos totam voluptate possimus voluptatum, ducimus quasi natus
+            accusantium quas molestiae?
+          </p>
+          <button>Attend</button>
+        </div>
+        <div class="contributor">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            quae eaque neque. Illo, deleniti modi! Repudiandae nisi, quidem,
+            ipsam eos totam voluptate possimus voluptatum, ducimus quasi natus
+            accusantium quas molestiae?
+          </p>
+          <button>Attend</button>
+        </div>
+        <div class="contributor">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            quae eaque neque. Illo, deleniti modi! Repudiandae nisi, quidem,
+            ipsam eos totam voluptate possimus voluptatum, ducimus quasi natus
+            accusantium quas molestiae?
+          </p>
+          <button>Attend</button>
+        </div>
+        <div class="contributor">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+            quae eaque neque. Illo, deleniti modi! Repudiandae nisi, quidem,
+            ipsam eos totam voluptate possimus voluptatum, ducimus quasi natus
+            accusantium quas molestiae?
+          </p>
+          <button>Attend</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="topics-container">
+      <p>Course Recommendation</p>
+      <ul>
+        <li>Course 1</li>
+        <li>Course 2</li>
+        <li>Course 3</li>
+        <li>Course 4</li>
+        <li>Course 5</li>
+      </ul>
+    </section>
+
+    <script>
+      let currentUrl = window.location.href;
+      document.querySelectorAll("nav ul li a").forEach((p) => {
+        if (currentUrl.indexOf(p.getAttribute("href")) !== -1) {
+          p.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
+<head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/bg.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #20b2aa;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header > p {
+  color: #f00;
+  font-size: 2em;
+  font-weight: bolder;
+  flex: 1;
+  text-align: center;
+  font-family: Cambria, sans-serif;
+}
+
+header > nav {
+  height: 100%;
+  flex: 3;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+header > nav > ul > li {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Cambria, sans-serif;
+}
+
+nav > ul > li > a.active {
+  color: #0f0;
+  font-weight: bold;
+  padding: 20%;
+  background-color: #fff;
+  border-radius: 10%;
+}
+
+section > p:nth-child(1) {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-shadow: 2px 2px #fff;
+}
+
+.tech-today-container {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #87cefa;
+  position: fixed;
+  left: 5%;
+  top: 15%;
+  border-radius: 10px;
+}
+
+.tech-today-container .tech-container {
+  background: #eee;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 10%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7.5%;
+}
+
+.search-container {
+  margin-bottom: 2%;
+  width: 40%;
+  background: linear-gradient(to left, #00f260, #0575e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.search-container > form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  width: 75%;
+}
+
+.search-container > form > input {
+  font-size: 1.25em;
+  border: none;
+  border-radius: 6px;
+  padding: 2%;
+  width: 75%;
+}
+
+.search-container > form > button {
+  font-size: 1.25em;
+  padding: 2%;
+  border-radius: 6px;
+  background: linear-gradient(to right, #d76d77, #ffaf7b);
+  color: #000;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px #000;
+  width: 20%;
+}
+
+.contribution-container {
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background-color: #87cefa;
+  border-radius: 10px;
+}
+
+.contribution-container .contributor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #eee;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.contributor > button {
+  background-color: #00f;
+  border-radius: 6px;
+  padding: 0.25em;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2em;
+  font-size: 1.1em;
+}
+
+.topics-container {
+  width: 20%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #87cefa;
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  gap: 5%;
+  border-radius: 10px;
+}
+
+.topics-container > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topics-container > ul > li {
+  margin-top: 10%;
+  list-style: "➡️ ";
+  list-style-position: inside;
+  background-color: #eee;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.topics-container > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+    </style>
+  </head>
